@@ -13,6 +13,9 @@ def signup_request(request):
 
 
 def login_request(request):
+    if request.method == 'POST':
+        print("Login request received")
+        return render(request, 'app/home.html')
     return render(request, 'app/login.html')
 
 
