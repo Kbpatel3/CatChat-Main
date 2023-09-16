@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 
 # Create your views here.
-def home(request):
+def home_request(request):
     return HttpResponse("Hello, world. Welcome to CatChat.")
 
 
@@ -13,9 +13,8 @@ def signup_request(request):
 
 
 def login_request(request):
-    return render(request, 'login.html')
+    return render(request, 'app/login.html')
 
 
 def logout_request(request):
-    #return render(request, 'logout.html')
-    return HttpResponse("Hello, world. Welcome to CatChat. Log out here.")
+    return render(request, 'app/logout.html')
