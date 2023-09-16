@@ -13,8 +13,7 @@ def signup_request(request):
 
 
 def login_request(request):
-    #return render(request, 'login.html')
-    return HttpResponse("Hello, world. Welcome to CatChat. Log in here.")
+    return render(request, 'login.html')
 
 
 def logout_request(request):
